@@ -11,7 +11,9 @@ body{
     display: flex;
     justify-content: center; /*  alinha no eixo horizontal */
     align-items: center; /* alinha no eixo vertical */
-    background-image: url("https://images.unsplash.com/photo-1495757450029-09dbedacbc36?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://img.freepik.com/free-vector/sunny-weather-background-vector-brown-with-cute-doodle-illustrations_53876-105740.jpg?t=st=1730309445~exp=1730313045~hmac=f3b22d665a7ede6e631812d5d88cb81a6b6fcadf9546d0ba559026677491ec03&w=1380");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-container{
@@ -19,6 +21,8 @@ body{
     opacity: 0.5;
     border-radius: 20px;
     padding: 20px;
+    width: 95%;
+    max-width: 450px;
 }
 
 input{
@@ -26,12 +30,55 @@ input{
     outline: none; /*borda que fica ao redor da caixa de pesquisa*/
     padding: 10px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #7c7c7c2b;
     color: #ffffff;
-    width: calc(100% - 100px);
+    width: calc(100% - 70px);
 }
 
-.img-btn{
-    
+.btn-busca{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+}
+
+.img-busca{
+    width: 20px;
+}
+
+.caixa-media{
+    margin-top: 30px;
+}
+
+.cidade{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.temperatura{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.weather-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade{
+    color: #ffffff;
+    margin-top: 20px;
 }
